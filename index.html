@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    @font-face {
+      font-family: 'Inter';
+      src: url('Inter-VariableFont_slnt,wght.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      background-color: hsl(0, 0%, 8%);
+      display: flex;
+      justify-content: center; /* Centre horizontalement */
+      align-items: center;    /* Centre verticalement */
+      height: 100vh;          /* Hauteur de la fenêtre */
+      flex-direction: column;
+      font-family:'Inter', sans-serif;
+      
+      
+    }
+    button{
+      color: white;
+      background-color: hsl(0, 0%, 20%);
+      padding: 2%;
+      margin: 5px;
+      width: 250px;
+      border-radius: 5px; /* Coins arrondis simples */
+      border: 0;
+      height: 40px;
+      font-size: 13px;
+    }
+    .social_media{
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centre horizontalement */
+      align-items: center;    /* Centre verticalement */
+    }
+    .card{
+      background-color:hsl(0, 0%, 12%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centre horizontalement */
+      align-items: center;    /* Centre verticalement */
+      height: 500px;
+      width: 300px;
+      border-radius: 3%;
+
+    }
+    img{
+      border-radius: 50%;
+      height: 15%;
+      margin-bottom: 10%;
+    }
+    .name{
+      color: white;
+      font-size:23px;
+      margin-bottom: 3%;
+    }
+    .where{
+      color: hsl(75, 94%, 57%);
+      margin-bottom: 4%;
+      font-size: small;
+    }
+    .description{
+      color: white;
+      font-size: 12px;
+    }
+    .attribution{
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="assets/images/avatar-jessica.jpeg" alt="profile_picture">
+    <span class="name">Jessica Randall</span>
+    <span class="where"><b>London, United Kingdom</b></span>
+    <p class="description">  "Front-end developer and avid reader."</p>
+    <div class="social_media">
+      <span><button>GitHub</button></span>
+      <span><button>Frontend Mentor</button></span>
+      <span><button>LinkedIn</button></span>
+      <span><button>Twitter</button></span>
+      <span><button>Instagram</button></span>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Djoue18</a>.
+  </div>
+</body>
+</html>
